@@ -12,7 +12,7 @@ public class PlayerMovement : MonoBehaviour
 
     private bool facingRight = true;
 
-    private bool isGrounded;
+    public bool isGrounded;
     public Transform groundCheck;
     public float checkRaduis;
     public LayerMask whatIsGround;
@@ -32,14 +32,14 @@ public class PlayerMovement : MonoBehaviour
     {
         if(isGrounded == true)
         {
-            extraJumps = 2;
+            extraJumps = 1;
         }
 
         if(Input.GetKeyDown(KeyCode.UpArrow) && extraJumps > 0)
         {
             rb.velocity = Vector2.up * jumpForce;
             extraJumps--;
-        } else if(Input.GetKeyDown(KeyCode.UpArrow) && extraJumps == 0 && isGrounded == true)
+        } else if (Input.GetKeyDown(KeyCode.UpArrow) && extraJumps == 0 && isGrounded == true)
         {
             rb.velocity = Vector2.up * jumpForce;
         }
@@ -51,7 +51,7 @@ public class PlayerMovement : MonoBehaviour
 
 
         moveInput = Input.GetAxis("Horizontal");
-        Debug.Log(moveInput);
+        //Debug.Log(moveInput);
         rb.velocity = new Vector2(moveInput * speed, rb.velocity.y);
 
         if (facingRight == false && moveInput > 0)
