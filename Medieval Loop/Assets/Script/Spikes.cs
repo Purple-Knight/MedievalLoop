@@ -4,15 +4,11 @@ using UnityEngine;
 
 public class Spikes : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    private void OnTriggerEnter2D(Collider2D col)
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        if (col.tag == "Player")
+        {
+            col.transform.position = GameObject.FindGameObjectWithTag("Spawn").transform.position;
+        }
     }
 }
