@@ -55,7 +55,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Dead.cs" />
+     <Compile Include="Assets\Script\Cage.cs" />
      <Compile Include="Assets\Script\CamController.cs" />
+     <Compile Include="Assets\Script\DontDestroy.cs" />
      <Compile Include="Assets\Script\Loop.cs" />
      <Compile Include="Assets\Script\PlayerMovement.cs" />
      <Compile Include="Assets\Script\Scie.cs" />
