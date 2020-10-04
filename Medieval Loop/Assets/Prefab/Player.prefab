@@ -101,7 +101,7 @@ MonoBehaviour:
   jumpForce: 12
   isGrounded: 0
   groundCheck: {fileID: 149131569326653479}
-  checkRaduis: 0.5
+  checkRaduis: 0.2
   whatIsGround:
     serializedVersion: 2
     m_Bits: 256
