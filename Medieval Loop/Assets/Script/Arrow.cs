@@ -27,11 +27,12 @@ public class Arrow : MonoBehaviour
         }*/
     }
 
-    private void OnCollisionEnter2D(Collision2D Col)
+    private void OnCollisionEnter2D(Collision2D col)
     {
-        if (Col.collider.gameObject.tag == "Player")
+        if (col.collider.gameObject.tag == "Player")
         {
             DestroyArrow();
+            col.transform.position = GameObject.FindGameObjectWithTag("Spawn").transform.position;
 
         }
         else

@@ -71,10 +71,12 @@
     <Compile Include="Assets\Script\Crossbow.cs" />
     <Compile Include="Assets\Script\DontDestroy.cs" />
     <Compile Include="Assets\Script\Loop.cs" />
+    <Compile Include="Assets\Script\MainMenu.cs" />
     <Compile Include="Assets\Script\PlayerMovement.cs" />
     <Compile Include="Assets\Script\Scie.cs" />
     <Compile Include="Assets\Script\Spawn.cs" />
     <Compile Include="Assets\Script\Spikes.cs" />
+    <Compile Include="Assets\Script\WorldMenu.cs" />
     <Compile Include="Assets\Script\bossRoom.cs" />
     <Compile Include="Assets\Script\cameraMove.cs" />
     <None Include="Assets\Sond\Nouveau document texte.txt" />
