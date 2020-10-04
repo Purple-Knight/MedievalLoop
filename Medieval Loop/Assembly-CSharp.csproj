@@ -55,10 +55,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Boucle.cs" />
-     <Compile Include="Assets\Loop.cs" />
-     <Compile Include="Assets\NLoop.cs" />
      <Compile Include="Assets\Script\CamController.cs" />
+     <Compile Include="Assets\Script\Loop.cs" />
      <Compile Include="Assets\Script\PlayerMovement.cs" />
      <Compile Include="Assets\Script\Scie.cs" />
      <Compile Include="Assets\Script\Spawn.cs" />
