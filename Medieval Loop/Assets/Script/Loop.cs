@@ -26,7 +26,7 @@ public class Loop : MonoBehaviour
             {
                 nboucle++;
                 boucle[nLoop].SetActive(true);
-                boucle[nLoop - 1].SetActive(false);
+                //boucle[nLoop - 1].SetActive(false);
             }
         }
 
