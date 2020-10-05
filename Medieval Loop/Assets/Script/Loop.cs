@@ -14,6 +14,7 @@ public class Loop : MonoBehaviour
 
     void Start()
     {
+        nLoop = 0;
         cam = Camera.main.GetComponent<CamController>();
         boucle[0].SetActive(true);
     }
