@@ -17,6 +17,8 @@ public class PlayerMovement : MonoBehaviour
     public float checkRaduis;
     public LayerMask whatIsGround;
 
+    public Animator animator;
+
 
     private int extraJumps;
     public int extraJumpValue;
@@ -33,11 +35,14 @@ public class PlayerMovement : MonoBehaviour
         if(isGrounded == true)
         {
             extraJumps = 1;
+            animator.SetBool("isJumping", false);
+
         }
 
-        if(Input.GetKeyDown(KeyCode.UpArrow) && extraJumps > 0)
+        if (Input.GetKeyDown(KeyCode.UpArrow) && extraJumps > 0)
         {
             rb.velocity = Vector2.up * jumpForce;
+            animator.SetBool("isJumping", true);
             extraJumps--;
         } else if (Input.GetKeyDown(KeyCode.UpArrow) && extraJumps == 0 && isGrounded == true)
         {
@@ -51,6 +56,7 @@ public class PlayerMovement : MonoBehaviour
 
 
         moveInput = Input.GetAxis("Horizontal");
+        animator.SetFloat("Speed", Mathf.Abs(moveInput));
         //Debug.Log(moveInput);
         rb.velocity = new Vector2(moveInput * speed, rb.velocity.y);
 
