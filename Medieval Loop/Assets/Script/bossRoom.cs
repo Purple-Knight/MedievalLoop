@@ -5,7 +5,7 @@ using UnityEngine;
 public class bossRoom : MonoBehaviour
 {
     private CamController cam;
-
+    public AudioClip final;
     // Start is called before the first frame update
     void Start()
     {
@@ -29,6 +29,11 @@ public class bossRoom : MonoBehaviour
             else
             {
                 cam.boss = true;
+                if(!cam.bossSpeak)
+                {
+                    AudioSource.PlayClipAtPoint(final, transform.position);
+                    cam.bossSpeak = true;
+                }
             }
         }
     }

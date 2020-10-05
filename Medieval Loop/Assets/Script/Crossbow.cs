@@ -16,6 +16,8 @@ public class Crossbow : MonoBehaviour
     float timeBtwShoot = 0;
     public float force;
 
+    public AudioClip shoot;
+
 
     private void Update()
     {
@@ -52,6 +54,7 @@ public class Crossbow : MonoBehaviour
             if (Time.time > timeBtwShoot)
             {
                 timeBtwShoot = Time.time + 1 / fireRate;
+                AudioSource.PlayClipAtPoint(shoot, transform.position);
                 Shoot();
             }
         }

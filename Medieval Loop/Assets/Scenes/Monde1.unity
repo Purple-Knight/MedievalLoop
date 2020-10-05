@@ -499,6 +499,7 @@ MonoBehaviour:
   bossPosition: {x: 16, y: -0.4, z: -10}
   camera: {fileID: 519420032}
   boss: 0
+  bossSpeak: 0
 --- !u!20 &519420031
 Camera:
   m_ObjectHideFlags: 0
@@ -2056,6 +2057,11 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 525965598688473645, guid: b70538000642bc54b874bf4a6fb92482,
+        type: 3}
+      propertyPath: final
+      value: 
+      objectReference: {fileID: 8300000, guid: 574b869894e2f464889d8e752aec8b03, type: 3}
     - target: {fileID: 6521740916041576304, guid: b70538000642bc54b874bf4a6fb92482,
         type: 3}
       propertyPath: m_LocalPosition.z

@@ -2004,6 +2004,11 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: 0.66
       objectReference: {fileID: 0}
+    - target: {fileID: 525965598688473645, guid: b70538000642bc54b874bf4a6fb92482,
+        type: 3}
+      propertyPath: final
+      value: 
+      objectReference: {fileID: 8300000, guid: e5cb5dd87a55ed94bb928f813a1596d0, type: 3}
     - target: {fileID: 6521740916041576304, guid: b70538000642bc54b874bf4a6fb92482,
         type: 3}
       propertyPath: m_LocalRotation.y
@@ -3354,6 +3359,7 @@ MonoBehaviour:
   bossPosition: {x: 18, y: 0, z: -10}
   camera: {fileID: 2114334263}
   boss: 0
+  bossSpeak: 0
 --- !u!4 &2123312281 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5642341708372489361, guid: 9733ae9ae1e4b4045a3d514475355afe,

@@ -102,6 +102,7 @@ MonoBehaviour:
   firePoint: {fileID: 4496927024952991405}
   fireRate: 0.5
   force: 100
+  shoot: {fileID: 8300000, guid: 08be8a17bb1514d48a09b2c38922fad4, type: 3}
 --- !u!50 &6127052941953568379
 Rigidbody2D:
   serializedVersion: 4

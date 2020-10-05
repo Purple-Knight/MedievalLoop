@@ -23,6 +23,8 @@ public class PlayerMovement : MonoBehaviour
     private int extraJumps;
     public int extraJumpValue;
 
+    public AudioClip jump;
+
 
     void Start()
     {
@@ -44,6 +46,7 @@ public class PlayerMovement : MonoBehaviour
             rb.velocity = Vector2.up * jumpForce;
             animator.SetBool("isJumping", true);
             extraJumps--;
+            AudioSource.PlayClipAtPoint(jump, transform.position);
         } else if (Input.GetKeyDown(KeyCode.UpArrow) && extraJumps == 0 && isGrounded == true)
         {
             rb.velocity = Vector2.up * jumpForce;

@@ -46,6 +46,7 @@ public class Loop : MonoBehaviour
             {
                 col.transform.position = GameObject.FindGameObjectWithTag("Spawn").transform.position;
                 cam.boss = false;
+                cam.bossSpeak = false;
             }
 
 

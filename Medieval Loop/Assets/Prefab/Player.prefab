@@ -108,6 +108,7 @@ MonoBehaviour:
     m_Bits: 256
   animator: {fileID: 8360529346004184316}
   extraJumpValue: 1
+  jump: {fileID: 8300000, guid: ffcf5554913b05d4f9e8431526a03440, type: 3}
 --- !u!50 &149131568192257620
 Rigidbody2D:
   serializedVersion: 4

@@ -6,7 +6,7 @@ public class Axe : MonoBehaviour
 {
 
     public Vector3 rotationSpeed;
-
+    public AudioClip axe;
     // Start is called before the first frame update
     void Start()
     {
@@ -23,6 +23,7 @@ public class Axe : MonoBehaviour
     {
         if (col.tag == "Player")
         {
+            AudioSource.PlayClipAtPoint(axe, transform.position);
             col.transform.position = GameObject.FindGameObjectWithTag("Spawn").transform.position;
         }
     }

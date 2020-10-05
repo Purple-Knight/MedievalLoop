@@ -1176,6 +1176,7 @@ MonoBehaviour:
   bossPosition: {x: -18, y: 0, z: -10}
   camera: {fileID: 580989211}
   boss: 0
+  bossSpeak: 0
 --- !u!1001 &641154267
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2654,6 +2655,11 @@ PrefabInstance:
       propertyPath: m_WasSpriteAssigned
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 525965598688473645, guid: b70538000642bc54b874bf4a6fb92482,
+        type: 3}
+      propertyPath: final
+      value: 
+      objectReference: {fileID: 8300000, guid: 2e4e3862134aff0439f14bacc81c0d0c, type: 3}
     - target: {fileID: 6521740916041576304, guid: b70538000642bc54b874bf4a6fb92482,
         type: 3}
       propertyPath: m_LocalPosition.z

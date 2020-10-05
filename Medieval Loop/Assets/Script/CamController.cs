@@ -12,6 +12,7 @@ public class CamController : MonoBehaviour
     public Transform camera;
 
     public bool boss;
+    public bool bossSpeak = false;
 
     void Start()
     {
